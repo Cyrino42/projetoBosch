@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Bosch</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<!-- Lista Estados / Botões -->
+
+<!-- ACRE -->
+<div class="card col-12"> 
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#AC">
+        Acre (AC) - Região Norte
+    </button>
+</div>
+
+<!-- Alagoas -->
+<div class="card col-12"> 
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#AL">
+        Alagoas (AL) - Nordeste 
+    </button>
+</div>
+
+<!-- Amapá -->
+<div class="card col-12"> 
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#AP">
+        Amapá (AP) - Região Norte 
+    </button>
+</div>
+
+<!-- Amazonas -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#AM">
+            Amazonas (AM) - Região Norte 
+        </button>
+</div>
+
+<!-- BAHIA -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#BA">
+            Bahia (BA) - Região Nordeste
+        </button>
+</div>
+
+<!-- Ceará -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#CE">
+            Ceará (CE) - Região Nordeste
+        </button>
+</div>
+
+<!-- Distrito Federal -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#DF">
+                Distrito Federal (DF) - Região Centro-Oeste
+        </button>
+</div>
+
+<!-- Espírito Santo -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#ES">
+                Espírito Santo (ES) - Região Sudeste
+        </button>
+</div>
+
+<!-- Goiás -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#GO">
+                Goiás (GO) - Região Centro-Oeste
+        </button>
+</div>
+
+<!-- Maranhão -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#MA">
+                Maranhão (MA) - Região Nordeste 
+        </button>
+</div>
+
+<!-- Mato Grosso -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#MT">
+                Mato Grosso (MT) - Região Centro-Oeste
+        </button>
+</div>
+
+<!-- Mato Grosso do Sul  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#MS">
+                Mato Grosso do Sul (MS) - Região Centro-Oeste
+        </button>
+</div>
+
+
+<!-- Minas Gerais  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#MG">
+                Minas Gerais (MG) - Região Sudeste
+        </button>
+</div>
+
+<!-- Pará  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#PA">
+                Pará (PA) - Região Norte
+        </button>
+</div>
+
+<!-- Paraíba  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#PB">
+                Paraíba (PB) - Região Nordeste
+        </button>
+</div>
+
+<!-- Paraná  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#PR">
+                Paraná (PR) - Região Sul 
+        </button>
+</div>
+
+<!-- Pernambuco  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#PE">
+                Pernambuco (PE) - Região Nordeste
+        </button>
+</div>
+
+<!-- Piauí  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#PI">
+                Piauí (PI) - Região Nordeste
+        </button>
+</div>
+
+<!-- Rio de Janeiro  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#RJ">
+                Rio de Janeiro (RJ) - Região Sudeste
+        </button>
+</div>
+
+<!-- Rio Grande do Norte  -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#RN">
+                Rio Grande do Norte (RN) - Região Nordeste
+        </button>
+</div>
+
+<!-- Rio Grande do Sul -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#RS">
+                Rio Grande do Sul (RS) - Região Sul 
+        </button>
+</div>
+
+<!-- Rondônia -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#RO">
+                Rondônia (RO) - Região Norte
+        </button>
+</div>
+
+<!-- Roraima -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#RR">
+                Roraima (RR) - Região Norte 
+        </button>
+</div>
+
+<!-- Santa Catarina -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#SC">
+                Santa Catarina (SC) - Região Sul 
+        </button>
+</div>
+
+<!-- São Paulo -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#SP">
+                São Paulo (SP) - Região Sudeste
+        </button>
+</div>
+
+<!-- Sergipe   -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#SE">
+                Sergipe (SE) - Região Nordeste
+        </button>
+</div>
+
+<!-- Tocantins   -->
+<div class="card col-12"> 
+        <button type="button" class="btn btn-success" data-toggle="modal" data-target="#TO">
+                Tocantins (TO) - Região Norte
+        </button>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+
+<!-- ACRE  -->
+<div class="modal fade" id="AC" tabindex="-1" role="dialog" aria-labelledby="AC" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Acre (AC) - Região Norte</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        Estado: Acre 
+        <br>Sigla: AC
+        <br>Região: Norte
+        <br>Área Urbanizada: 49,5
+        <br>Área Total (KM²): 164 123,040
+        <br>% Total Brasileiro: 1,92
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Alagoas  -->
+<div class="modal fade" id="AL" tabindex="-1" role="dialog" aria-labelledby="AL" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Alagoas (AL) -Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Alagoas 
+              <br>Sigla: AL
+              <br>Região: Nordeste 
+              <br>Área Urbanizada: 202,1
+              <br>Área Total (KM²): 27 778,506
+              <br>% Total Brasileiro: 0,33
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Amapá  -->
+<div class="modal fade" id="AP" tabindex="-1" role="dialog" aria-labelledby="AP" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Amapá (AP) - Região Norte</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Amapá 
+              <br>Sigla: AP
+              <br>Região: Norte 
+              <br>Área Urbanizada: 69,3
+              <br>Área Total (KM²): 142 828,521
+              <br>% Total Brasileiro: 1,68
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--  Amazonas  -->
+<div class="modal fade" id="AM" tabindex="-1" role="dialog" aria-labelledby="AM" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Amazonas (AM) - Região Norte </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Amazonas 
+              <br>Sigla: AM
+              <br>Região: Norte 
+              <br>Área Urbanizada: 395,1
+              <br>Área Total (KM²): 1 559 159,148
+              <br>% Total Brasileiro: 18,31
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Bahia  -->
+<div class="modal fade" id="BA" tabindex="-1" role="dialog" aria-labelledby="BA" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Bahia (BA) - Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Bahia 
+              <br>Sigla: BA
+              <br>Região: Nordeste 
+              <br>Área Urbanizada: 762,9
+              <br>Área Total (KM²): 564 733,177
+              <br>% Total Brasileiro: 6,63
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--  Ceará  -->
+<div class="modal fade" id="CE" tabindex="-1" role="dialog" aria-labelledby="CE" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Ceará (CE) - Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Ceará 
+              <br>Sigla: CE
+              <br>Região: Nordeste 
+              <br>Área Urbanizada: 471,2
+              <br>Área Total (KM²): 148 920,472
+              <br>% Total Brasileiro: 1,74
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Distrito Federal  -->
+<div class="modal fade" id="DF" tabindex="-1" role="dialog" aria-labelledby="DF" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Distrito Federal (DF) - Região Centro-Oeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Distrito Federal 
+              <br>Sigla: DF
+              <br>Região: Centro-Oeste  
+              <br>Área Urbanizada: 621,2
+              <br>Área Total (KM²): 5 779,999
+              <br>% Total Brasileiro: 0,07
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   Espírito Santo  -->
+<div class="modal fade" id="ES" tabindex="-1" role="dialog" aria-labelledby="ES" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Espírito Santo (ES) - Região Sudeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Espírito Santo 
+              <br>Sigla: ES
+              <br>Região: Centro-Oeste  
+              <br>Área Urbanizada: 427,6
+              <br>Área Total (KM²): 46 095,583
+              <br>% Total Brasileiro: 0,54
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--   Goiás  -->
+<div class="modal fade" id="GO" tabindex="-1" role="dialog" aria-labelledby="GO" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Goiás (GO) - Região Centro-Oeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Goiás
+              <br>Sigla: GO
+              <br>Região: Centro-Oeste  
+              <br>Área Urbanizada: 1 113,6
+              <br>Área Total (KM²): 340 111,783
+              <br>% Total Brasileiro: 3,99
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   Maranhão  -->
+<div class="modal fade" id="MA" tabindex="-1" role="dialog" aria-labelledby="MA" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Maranhão (MA) - Região Nordeste  </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Maranhão
+              <br>Sigla: MA
+              <br>Região: Centro-Oeste  
+              <br>Área Urbanizada: 512,3
+              <br>Área Total (KM²): 331 937,450
+              <br>% Total Brasileiro: 3,90
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   Mato Grosso  -->
+<div class="modal fade" id="MT" tabindex="-1" role="dialog" aria-labelledby="MT" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Mato Grosso (MT) - Região Centro-Oeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Mato Grosso 
+              <br>Sigla: MT
+              <br>Região: Centro-Oeste  
+              <br>Área Urbanizada: 519,7
+              <br>Área Total (KM²): 903 366,192
+              <br>% Total Brasileiro: 10,61
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   Mato Grosso do Sul -->
+<div class="modal fade" id="MS" tabindex="-1" role="dialog" aria-labelledby="MS" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Mato Grosso do Sul (MS) - Região Centro-Oeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Mato Grosso do Sul
+              <br>Sigla: MS
+              <br>Região: Centro-Oeste  
+              <br>Área Urbanizada: 441,3
+              <br>Área Total (KM²): 357 145,532
+              <br>% Total Brasileiro: 4,19
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <!--   Minas Gerais -->
+<div class="modal fade" id="MG" tabindex="-1" role="dialog" aria-labelledby="MG" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Minas Gerais (MG) - Região Sudeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Minas Gerais
+              <br>Sigla: MG
+              <br>Região: Sugeste
+              <br>Área Urbanizada: 2 525,8
+              <br>Área Total (KM²): 586 522,122
+              <br>% Total Brasileiro: 6,89
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--   Pará -->
+<div class="modal fade" id="PA" tabindex="-1" role="dialog" aria-labelledby="PA" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Pará (PA) - Região Norte </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Pará
+              <br>Sigla: PA
+              <br>Região: Norte
+              <br>Área Urbanizada: 730,6
+              <br>Área Total (KM²): 1 247 954,666
+              <br>% Total Brasileiro: 14,65
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Paraíba -->
+<div class="modal fade" id="PB" tabindex="-1" role="dialog" aria-labelledby="PB" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Paraíba (PB) - Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Paraíba
+              <br>Sigla: PB
+              <br>Região: Nordeste
+              <br>Área Urbanizada: 319,6
+              <br>Área Total (KM²): 56 585,000
+              <br>% Total Brasileiro: 0,66
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      <!--  Paraná -->
+<div class="modal fade" id="PR" tabindex="-1" role="dialog" aria-labelledby="PR" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Paraná (PR) - Região Sul  </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Paraná
+              <br>Sigla: PR
+              <br>Região: Sul
+              <br>Área Urbanizada: 1 603,7
+              <br>Área Total (KM²): 199 307,922
+              <br>% Total Brasileiro: 2,34
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Pernambuco -->
+<div class="modal fade" id="PE" tabindex="-1" role="dialog" aria-labelledby="PE" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Pernambuco (PE) - Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Pernambuco
+              <br>Sigla: PE
+              <br>Região: Nordeste
+              <br>Área Urbanizada: 622,3
+              <br>Área Total (KM²): 98 311,616
+              <br>% Total Brasileiro: 1,15
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Piauí -->
+<div class="modal fade" id="PI" tabindex="-1" role="dialog" aria-labelledby="PI" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Piauí (PI) - Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Piauí
+              <br>Sigla: PI
+              <br>Região: Nordeste
+              <br>Área Urbanizada: 277,1
+              <br>Área Total (KM²): 251 577,738
+              <br>% Total Brasileiro: 2,95
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<!--  Rio de Janeiro -->
+<div class="modal fade" id="RJ" tabindex="-1" role="dialog" aria-labelledby="RJ" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rio de Janeiro (RJ) - Região Sudeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Rio de Janeiro
+              <br>Sigla: RJ
+              <br>Região: Sudeste
+              <br>Área Urbanizada: 1 479,9
+              <br>Área Total (KM²): 43 780,172
+              <br>% Total Brasileiro: 0,51
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Rio Grande do Norte -->
+<div class="modal fade" id="RN" tabindex="-1" role="dialog" aria-labelledby="RN" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rio Grande do Norte (RN) - Região Nordeste  </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Rio Grande do Norte
+              <br>Sigla: RN
+              <br>Região: Nordeste
+              <br>Área Urbanizada: 269,6
+              <br>Área Total (KM²): 52 811,047
+              <br>% Total Brasileiro: 0,62
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Rio Grande do Sul -->
+<div class="modal fade" id="RS" tabindex="-1" role="dialog" aria-labelledby="RS" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rio Grande do Sul (RS) - Região Sul </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Rio Grande do Sul
+              <br>Sigla: RS
+              <br>Região: Sul
+              <br>Área Urbanizada: 1 647
+              <br>Área Total (KM²): 281 730,223
+              <br>% Total Brasileiro: 3,31
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Rondônia -->
+<div class="modal fade" id="RO" tabindex="-1" role="dialog" aria-labelledby="RO" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Rondônia (RO) - Região Norte </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Rondônia
+              <br>Sigla: RO
+              <br>Região: Norte
+              <br>Área Urbanizada: 226,1
+              <br>Área Total (KM²): 237 590,547
+              <br>% Total Brasileiro: 2,79
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--  Roraima -->
+<div class="modal fade" id="RR" tabindex="-1" role="dialog" aria-labelledby="RR" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Roraima (RR) - Região Norte  </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Roraima
+              <br>Sigla: RR
+              <br>Região: Norte
+              <br>Área Urbanizada: 40,6
+              <br>Área Total (KM²): 224 300,506
+              <br>% Total Brasileiro: 2,63
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+       <!--  Santa Catarina -->
+<div class="modal fade" id="SC" tabindex="-1" role="dialog" aria-labelledby="SC" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Santa Catarina (SC) - Região Sul   </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Santa Catarina
+              <br>Sigla: SC
+              <br>Região: Sul
+              <br>Área Urbanizada: 878,2
+              <br>Área Total (KM²): 95 736,165
+              <br>% Total Brasileiro: 1,12
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  São Paulo -->
+<div class="modal fade" id="SP" tabindex="-1" role="dialog" aria-labelledby="SP" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">São Paulo (SP) - Região Sudeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: São Paulo
+              <br>Sigla: SP
+              <br>Região: Sudeste
+              <br>Área Urbanizada: 4 971
+              <br>Área Total (KM²): 248 222,362	
+              <br>% Total Brasileiro: 2,91
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Sergipe -->
+<div class="modal fade" id="SE" tabindex="-1" role="dialog" aria-labelledby="SE" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Sergipe (SE) - Região Nordeste </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Sergipe
+              <br>Sigla: SE
+              <br>Região: Nordeste
+              <br>Área Urbanizada: 118,7
+              <br>Área Total (KM²): 21 915,116
+              <br>% Total Brasileiro: 0,26
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--  Tocantins -->
+<div class="modal fade" id="TO" tabindex="-1" role="dialog" aria-labelledby="TO" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Tocantins (TO) - Região Norte </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              Estado: Tocantins
+              <br>Sigla: TO
+              <br>Região: Norte
+              <br>Área Urbanizada: 99,6
+              <br>Área Total (KM²): 277 720,520
+              <br>% Total Brasileiro: 3,26
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Sair</button>
+            </div>
+          </div>
+        </div>
+      </div>    
+</body>
+</html>
